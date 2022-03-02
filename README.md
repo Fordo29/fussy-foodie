@@ -37,7 +37,6 @@ SCSS
    
 ## Links  
 Checkout the Turing spec sheet [here](https://frontend.turing.edu/projects/module-3/showcase.html)
-Checkout the Deployed Link (Coming soon)
 
 ## Challenges and Wins  
 (Coming soon)

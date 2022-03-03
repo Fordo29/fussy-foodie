@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import NavBar from './NavBar';
 import Recipes from './Recipes';
+import getData from '../apiCalls';
 
 import '../Styling/App.scss';
 
@@ -14,6 +15,14 @@ class App extends Component {
       recipe: '',
       error: ''
     }
+  }
+
+  componentDidMount = () => {
+    getData()
+      .then(recipesData => {
+        this.setState({ recipes: recipesData.foods})
+      })
+      .catch(error => this.setState({ error: error.message}))
   }
 
   displayHomePage = () => {

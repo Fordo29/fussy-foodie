@@ -7,7 +7,7 @@ import SingleRecipe from './SingleRecipe';
 import Favorites from './Favorites'
 import ErrorPage from './ErrorPage'
 
-import '../Styling/App.scss';
+import '../styling/App.scss';
 
 class App extends Component {
   constructor() {

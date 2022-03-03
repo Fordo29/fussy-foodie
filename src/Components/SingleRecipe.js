@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../Styling/SingleRecipe.scss';
+import '../styling/SingleRecipe.scss';
 import getData from "../apiCalls";
 import SingleRecipeDetails from "./SingleRecipeDetails";
 import ErrorPage from "./ErrorPage";

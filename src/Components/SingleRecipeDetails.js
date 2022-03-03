@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styling/SingleRecipeDetails.scss';
+import '../styling/SingleRecipeDetails.scss';
 
 const SingleRecipeDetails = ({urlId, recipe, addFav, removeFav, isFavoriteRecipe}) => {
   

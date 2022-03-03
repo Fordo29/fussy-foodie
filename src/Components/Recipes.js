@@ -1,6 +1,6 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
-import '../Styling/Recipes.scss'
+import '../styling/Recipes.scss'
 
 const Recipes = ({ recipes }) => {
   let recipeCards;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Recipes from "./Recipes";
-import '../Styling/Favorites.scss';
+import '../styling/Favorites.scss';
 
 const Favorites = (props) => {
 

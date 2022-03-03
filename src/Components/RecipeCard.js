@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import '../Styling/RecipeCard.scss'
+import '../styling/RecipeCard.scss'
 
 const RecipeCard = ({ recipeImage, title, id}) => {
   return (

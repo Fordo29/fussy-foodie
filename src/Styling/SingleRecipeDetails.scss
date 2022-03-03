@@ -1,0 +1,38 @@
+.single-recipe-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.recipe-img-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-single-recipe {
+  width: 50%;
+}
+
+.recipe-title-cooking-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  line-height: 130%;
+}
+
+.cooking-info-section {
+  display:flex;
+}
+
+.cooking-info {
+  width: 50%;
+}
+
+ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+.direction-list {
+    list-style: decimal;
+    list-style-position: inside;
+}

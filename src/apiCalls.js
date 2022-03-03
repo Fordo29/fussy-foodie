@@ -1,5 +1,5 @@
-const getData = () => {
-  return fetch(`https://picky-eaters.herokuapp.com/api/v1/foods`)
+const getData = path => {
+  return fetch(`https://picky-eaters.herokuapp.com/api/v1/${path}`)
     .then(response => {
       if (response.ok) {
         return response.json()

@@ -3,8 +3,9 @@ import RecipeCard from "./RecipeCard";
 import '../Styling/Recipes.scss'
 
 const Recipes = ({ recipes }) => {
-  const recipeCards = recipes.map(recipe => {
-    console.log(recipe)
+  let recipeCards;
+  if(recipes) {
+  recipeCards = recipes.map(recipe => {
     return (
       <RecipeCard
         key={recipe.id}
@@ -14,6 +15,9 @@ const Recipes = ({ recipes }) => {
       />
     )
   })
+  } else {
+    return null
+  }
   return (
     <section className="recipes-container">
       {recipeCards}

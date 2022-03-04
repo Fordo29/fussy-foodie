@@ -7,8 +7,8 @@ const FavoriteCard = ({ recipeImage, title, id, removeFavorite}) => {
     <section className="recipe-card">
       <img className="recipe-cover" src={recipeImage} alt={`${title} cover`}/>
         <h2 className="book-title">{title}</h2>
-      <button className="unfavorite-button" onClick={() => removeFavorite(id)}>Remove from Favorites</button>
       <Link key={id} to={`/${id}/selectedRecipe`} className="recipe-detail-link">Try It</Link>
+      <button className="unfavorite-button" onClick={() => removeFavorite(id)}>Remove from Favorites</button>
     </section>
   )
 }

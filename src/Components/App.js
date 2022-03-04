@@ -35,28 +35,27 @@ class App extends Component {
   addFavorite = (newRecipe) => {
     const findRecipe = this.state.recipes.find(recipe => recipe.id === newRecipe.id)
     if(!this.state.favorites.includes(findRecipe)){
-      this.setState({favorites: [...this.state.favorites, findRecipe]  });
+      this.setState({ favorites: [...this.state.favorites, findRecipe] });
     } else {
       this.setState({...this.state})
     }
   }
 
-  removeFavorite = (id) => {
-    const unfav = this.state.recipes.find(recipe => recipe.id === id)
+  removeFavorite = (favId) => {
+    const unfav = this.state.recipes.find(recipe => recipe.id === favId)
+    console.log("id1", unfav)
     const filteredFavs = this.state.favorites.filter(fav => fav.id !== unfav.id);
     this.setState({ favorites: filteredFavs });
   }
 
-
   render() {
-    // console.log(this.state.favorites)
     return (
       <main className="main-container">
         <NavBar />
         <Switch>
-          <Route exact path='/' render={() => <Recipes recipes={this.state.recipes}  />}/>
-          <Route exact path='/:id/selectedRecipe' render={({ match }) => <SingleRecipe id={match.params.id} addFavorite={this.addFavorite} removeFavorite={this.removeFavorite} isFavRecipe={this.state.isFavRecipe}/>}/>
-          <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites}/>}/>
+          <Route exact path='/' render={() => <Recipes recipes={this.state.recipes} addFavorite={this.addFavorite}  />}/>
+          <Route exact path='/:id/selectedRecipe' render={({ match }) => <SingleRecipe id={match.params.id}  />}/>
+          <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites} removeFavorite={this.removeFavorite}/>}/>
           <Route render={() => <ErrorPage />}/>
         </Switch>
       </main>

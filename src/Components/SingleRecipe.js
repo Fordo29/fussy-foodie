@@ -11,13 +11,12 @@ class SingleRecipe extends Component {
     super(props);
     this.state = {
       isSingleRecipe: false,
-      isFavoriteRecipe: false,
-      recipe: '',
+      selectedRecipe: '',
+      isFavoritedRecipe: false,
       error: ''
     }
   }
 
-  
   componentDidMount = () => {
     getData(`foods/${this.props.id}`)
     .then(recipeData => {
@@ -29,10 +28,9 @@ class SingleRecipe extends Component {
 
   
   render() {
-    const errorCheck = this.state.error ? <ErrorPage /> :  <SingleRecipeDetails urlId={this.props.id} recipe={this.state.recipe} addFav={this.props.addFavorite} removeFav={this.props.removeFavorite} isFavoriteRecipe={this.state.isFavoriteRecipe}/>
+    const errorCheck = this.state.error ? <ErrorPage /> :  <SingleRecipeDetails urlId={this.props.id} recipe={this.state.recipe} addFav={this.props.addFavorite} removeFav={this.props.removeFavorite} />
     return (
       <section className="single-recipe-page">
-        {console.log("is fav are you there", this.state.isFavoriteRecipe)}
        {errorCheck}
       </section>
     )

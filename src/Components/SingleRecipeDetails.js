@@ -1,34 +1,25 @@
 import React from "react";
 import '../styling/SingleRecipeDetails.scss';
 
-const SingleRecipeDetails = ({urlId, recipe, addFav, removeFav, isFavoriteRecipe}) => {
+const SingleRecipeDetails = ({ recipe, determineFavButton }) => {
   
   let ingredientsList
   let directionsList
   if (recipe) {
     ingredientsList = recipe.ingredients.map(item => {
-    return <li key={item}>{item}</li>  })
+    return <li key={item}>{item}</li>})
   } else {
     return null
   }
 
   if (recipe) {
     directionsList = recipe.directions.map(item => {
-      return <li className="direction-list" key={item}>{item}</li>
-    })
+      return <li className="direction-list" key={item}>{item}</li> })
   } else {
     return null
   }
 
-  const determineFavButton = () => {
-    if(isFavoriteRecipe === true) {
-      isFavoriteRecipe = false
-        return <button className="unfavorite-button" onClick={() => removeFav(urlId)}>Remove from Favorites</button>
-      } else if (isFavoriteRecipe === false) {
-        isFavoriteRecipe = true
-        return <button className="favorite-button" onClick={() => addFav(recipe)}>Add to Favorites</button>
-    }
-  }
+
   return (
     <section className="single-recipe-container">
       <section className="recipe-img-header">
@@ -57,8 +48,6 @@ const SingleRecipeDetails = ({urlId, recipe, addFav, removeFav, isFavoriteRecipe
           <h3>Nutrition Information:</h3>
           <p>For each serving of {recipe.nutritionDetails}</p>
         </section>
-        {console.log("is this a thing", isFavoriteRecipe)}
-        {determineFavButton()}
     </section>
   )
 }

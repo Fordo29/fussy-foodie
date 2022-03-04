@@ -2,7 +2,7 @@ import React from "react";
 import RecipeCard from "./RecipeCard";
 import '../styling/Recipes.scss'
 
-const Recipes = ({ recipes }) => {
+const Recipes = ({ recipes, addFavorite}) => {
   let recipeCards;
   if(recipes) {
   recipeCards = recipes.map(recipe => {
@@ -12,6 +12,8 @@ const Recipes = ({ recipes }) => {
         id={recipe.id}
         title={recipe.recipeTitle}
         recipeImage={recipe.image}
+        recipe={recipe}
+        favoriteBtn={addFavorite}
       />
     )
   })

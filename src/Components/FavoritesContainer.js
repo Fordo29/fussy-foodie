@@ -12,7 +12,6 @@ const FavoritesContainer = ({ favorites, removeFavorite}) => {
         id={recipe.id}
         title={recipe.recipeTitle}
         recipeImage={recipe.image}
-        recipe={recipe}
         removeFavorite={removeFavorite}
       />
     )

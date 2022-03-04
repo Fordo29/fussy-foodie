@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"
 import '../styling/FavoriteCard.scss'
 
-const FavoriteCard = ({ recipeImage, title, id, recipe, removeFavorite}) => {
+const FavoriteCard = ({ recipeImage, title, id, removeFavorite}) => {
   return (
     <section className="recipe-card">
       <img className="recipe-cover" src={recipeImage} alt={`${title} cover`}/>

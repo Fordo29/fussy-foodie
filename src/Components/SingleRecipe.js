@@ -3,8 +3,6 @@ import '../styling/SingleRecipe.scss';
 import getData from "../apiCalls";
 import SingleRecipeDetails from "./SingleRecipeDetails";
 import ErrorPage from "./ErrorPage";
-import { match } from "check-types";
-
 
 class SingleRecipe extends Component {
   constructor(props) {
@@ -26,7 +24,6 @@ class SingleRecipe extends Component {
     .catch(error => this.setState({ error: error.message }))
   }
 
-  
   render() {
     const errorCheck = this.state.error ? <ErrorPage /> :  <SingleRecipeDetails urlId={this.props.id} recipe={this.state.recipe} addFav={this.props.addFavorite} removeFav={this.props.removeFavorite} />
     return (

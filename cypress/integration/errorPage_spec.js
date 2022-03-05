@@ -13,14 +13,14 @@ describe('Landing Page user flow', () => {
     cy.get('.error-message')
     .should('have.text', 'Page not found. So sorry, that URL does not exist')
   });
-  
+
   it('Should return to the home page by clicking the logo at top of page', () => {
     cy.get('.nav-bar').find('.header-link').click()
       .url().should('eq', 'http://localhost:3000/')
   });
 
   it('Should go to favorites page when clicking the favorites link at the top of the page', () => {
-   cy.get('.nav-bar').find('.favorites-link').click()
+    cy.get('.nav-bar').find('.favorites-link').click()
       .url().should('eq', 'http://localhost:3000/favorites')
   });
 });

@@ -5,19 +5,25 @@
   flex-direction: column;
   margin: 1%;
   font-family: $fontFamily;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 1em;
+  background-color: $cardBackgroundColor;
 }
 
 .recipe-img-header {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 1em;
+  justify-content: space-between;
 }
 
 .image-single-recipe {
-  width: 50%;
+  flex: 2;
+  width: 40%;
+  border-radius: 10px;
 }
 
 .recipe-title-cooking-info {
+  flex: 3;
   display: flex;
   flex-direction: column;
   margin-left: 1.5em;
@@ -26,23 +32,43 @@
 
 .recipe-header {
   text-align: center;
+  font-size: x-large;
   font-weight: 600;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
+.bold {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: .2em;
+}
 .cooking-info-section {
   display:flex;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
 }
 
 .cooking-info {
-  width: 50%;
+  flex: 2;
 }
 
-ol {
-    list-style: decimal;
-    list-style-position: inside;
+.servings-section {
+  flex: 1;
 }
+
+.lower-page-section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .direction-list {
-    list-style: decimal;
-    list-style-position: inside;
+  list-style: decimal;
+  list-style-position: inside;
+  line-height: 1.2em;
+  margin-bottom: .5em;
+}
+.nutrition-section {
+  list-style: decimal;
+  list-style-position: inside;
+  line-height: 1.2em;  
 }

@@ -22,31 +22,33 @@ const SingleRecipeDetails = ({ recipe, determineFavButton }) => {
 
   return (
     <section className="single-recipe-container">
+      <h2 className="recipe-header">{recipe.recipeTitle}</h2>
       <section className="recipe-img-header">
         <img className="image-single-recipe" src={recipe.image} alt={`${recipe.title} cover`}/>
         <section className="recipe-title-cooking-info">
-          <h2 className="recipe-header">{recipe.recipeTitle}</h2>
           <section className="cooking-info-section">
             <section className="cooking-info">
-              <h3>Cook Time:</h3>
+              <h3 className="bold">Cook Time:</h3>
               <p>{recipe.cookingTimeDetails}</p>
             </section>
-            <section>
-              <h3>Makes:</h3>
+            <section className="servings-section">
+              <h3 className="bold">Makes:</h3>
               <p>{recipe.servings}</p>
             </section>
           </section>
-          <h3>Ingredients:</h3>
+          <h3 className="bold">Ingredients:</h3>
             {ingredientsList}
         </section>
       </section>
-        <section>
-          <h3>Directions:</h3>
+        <section className="lower-page-section">
+          <h3 className="bold">Directions:</h3>
           <ol>
             {directionsList}
           </ol>
-          <h3>Nutrition Information:</h3>
-          <p>For each serving of {recipe.nutritionDetails}</p>
+          <section className="nutrition-section">
+            <h3 className="bold">Nutrition Information:</h3>
+            <p>For each serving of {recipe.nutritionDetails}</p>
+          </section>
         </section>
     </section>
   )

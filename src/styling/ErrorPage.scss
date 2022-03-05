@@ -1,1 +1,12 @@
+@import './_variables.scss';
+.message-container {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+}
 
+.error-message {
+font-family: $fontFamily;
+ font-weight: bold;
+}

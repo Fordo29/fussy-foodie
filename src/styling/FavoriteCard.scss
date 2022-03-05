@@ -21,6 +21,7 @@
 }
 .recipe-cover:hover  {
   transform: scale(1.05);
+  // object-fit: none;
   cursor: pointer;
 }
 
@@ -49,7 +50,7 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
-  padding-top: .2em;
+  padding: .2em;
 }
 
 .unfavorite-button {

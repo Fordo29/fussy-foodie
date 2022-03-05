@@ -34,7 +34,7 @@ class App extends Component {
 
   addFavorite = (newRecipe) => {
     const findRecipe = this.state.recipes.find(recipe => recipe.id === newRecipe.id)
-    if(!this.state.favorites.includes(findRecipe)){
+    if(!this.state.favorites.includes(findRecipe)) {
       this.setState({ favorites: [...this.state.favorites, findRecipe] });
     } else {
       this.setState({...this.state})
@@ -51,7 +51,6 @@ class App extends Component {
   render() {
     return (
       <main className="main-container">
-        {/* <NavBar /> */}
         <Switch>
           <Route exact path='/' render={({ match }) => { 
             return [<NavBar location="landingPage" key={match + '-nav'}/>, <Recipes recipes={this.state.recipes} addFavorite={this.addFavorite}  />]

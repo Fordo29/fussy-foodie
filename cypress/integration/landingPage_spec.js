@@ -23,15 +23,4 @@ describe('Feedback Loop login flows', () => {
       .should('have.length', 5)
   });
 
-  // it('Should display the movies sorted by release date (newest to oldest)', () => {
-  //   cy.get('.poster-release-date')
-  //     .first()
-  //     .contains('09-29-2020')
-  //   cy.get('.poster-release-date')
-  //     .eq(2)
-  //     .contains('08-20-2020')
-  //   cy.get('.poster-release-date')
-  //     .eq(1)
-  //     .contains('09-04-2020')
-  // });
 });

@@ -1,4 +1,4 @@
-describe('Feedback Loop login flows', () => {
+describe('Single recipe page user flow', () => {
   beforeEach(() => {
     cy.intercept('https://picky-eaters.herokuapp.com/api/v1/foods/1', { fixture: 'recipe.json' }).wait(55)
     cy.visit('http://localhost:3000/1/selectedRecipe');
@@ -30,13 +30,4 @@ describe('Feedback Loop login flows', () => {
    cy.get('.nav-bar').find('.favorites-link').click()
       .url().should('eq', 'http://localhost:3000/favorites')
   });
-
-  // it('Should go forward when pressing forward button', () => {
-  //   cy.go('forward')
-  //     .url().should('eq', 'http://localhost:3000/726739')
-  // });
-  // it('Should display 5 recipe cards', () => {
-  //   cy.get('.recipe-card')
-  //     .should('have.length', 5)
-  // });
 });

@@ -61,7 +61,8 @@ class App extends Component {
           <Route exact path='/favorites' render={({ match }) => {
             return [<NavBar location="favorites" key={match + '-nav'}/>, <Favorites favorites={this.state.favorites} removeFavorite={this.removeFavorite}/>]
         }}/>
-          <Route render={() => <ErrorPage />}/>
+          <Route render={() => {
+            return [<NavBar location="error-page" key={'erro-nav'}/>, <ErrorPage />]}}/>
         </Switch>
       </main>
     )

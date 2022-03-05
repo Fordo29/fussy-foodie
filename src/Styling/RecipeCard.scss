@@ -1,3 +1,5 @@
+@import './variables';
+
 .recipe-card {
   display:flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
   border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   padding: .7em;
-  background-color: #ff770080;
+  background-color: $cardBackgroundColor;
 }
 
 .recipe-cover {
@@ -72,5 +74,5 @@
 .favorite-button:hover,
 .recipe-detail-link:hover {
   cursor: pointer;
-  background-color: #d68135d1;
+  background-color: $btnHoverColor;
 }

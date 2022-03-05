@@ -1,7 +1,7 @@
 import React from "react";
 import '../styling/SingleRecipeDetails.scss';
 
-const SingleRecipeDetails = ({ recipe, determineFavButton }) => {
+const SingleRecipeDetails = ({ recipe }) => {
   
   let ingredientsList
   let directionsList

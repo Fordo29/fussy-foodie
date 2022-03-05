@@ -21,6 +21,20 @@ describe('Feedback Loop login flows', () => {
       .get('.nutrition-section').contains('1 serving: 502 calories, 28g fat (18g saturated fat), 131mg cholesterol, 638mg sodium, 42g carbohydrate (7g sugars, 2g fiber), 21g protein.')
   });
 
+  it('Should return to the home page by clicking the logo at top of page', () => {
+    cy.get('.nav-bar').find('.header-link').click()
+      .url().should('eq', 'http://localhost:3000/')
+  });
+
+  it('Should go to favorites page when clicking the favorites link at the top of the page', () => {
+   cy.get('.nav-bar').find('.favorites-link').click()
+      .url().should('eq', 'http://localhost:3000/favorites')
+  });
+
+  // it('Should go forward when pressing forward button', () => {
+  //   cy.go('forward')
+  //     .url().should('eq', 'http://localhost:3000/726739')
+  // });
   // it('Should display 5 recipe cards', () => {
   //   cy.get('.recipe-card')
   //     .should('have.length', 5)

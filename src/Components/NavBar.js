@@ -12,7 +12,7 @@ const NavBar = ({ location }) => {
   return (
     <nav className="nav-bar">
       <Link className="header-link" to="/">
-        <h1 className='header-text'>Rebellious Recipes</h1>
+        <h1 className='header-text'>Fussy Foodie</h1>
       </Link>
       {navLink}
     </nav>

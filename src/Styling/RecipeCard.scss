@@ -1,11 +1,78 @@
+@import './variables';
+
 .recipe-card {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   box-sizing: border-box;
-  border: 3px solid black;
-  padding: 10px;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: .7em;
+  background-color: $cardBackgroundColor;
 }
 
 .recipe-cover {
-  width: 80%;
-  border: 5px solid green;
+  width: 100%;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 10px;
   margin-bottom: 12px;
+  transition: all .2s ease-in-out; 
+}
+.recipe-cover:hover  {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.book-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  margin-bottom: .5em;
+  font-size: 1em;
+}
+.recipe-detail-link {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  margin-bottom: .5em;
+  width: 5em;
+  height: 1.8em;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: .2em;
+}
+
+.favorite-button {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  margin-bottom: .5em;
+  width: 9em;
+  height: 1.8em;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.favorite-button:hover,
+.recipe-detail-link:hover {
+  cursor: pointer;
+  background-color: $btnHoverColor;
 }

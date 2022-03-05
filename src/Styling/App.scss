@@ -1,5 +1,9 @@
 @import './_reset';
+@import './variables';
 
-.main-container {
+body{
   padding: 2%;
+  background-color: $pageBackgroundColor;   
 }
+
+

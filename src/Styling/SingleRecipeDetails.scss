@@ -1,12 +1,16 @@
+@import './variables';
+
 .single-recipe-container {
   display: flex;
   flex-direction: column;
   margin: 1%;
+  font-family: $fontFamily;
 }
 
 .recipe-img-header {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1em;
 }
 
 .image-single-recipe {
@@ -16,8 +20,14 @@
 .recipe-title-cooking-info {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
+  margin-left: 1.5em;
   line-height: 130%;
+}
+
+.recipe-header {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2em;
 }
 
 .cooking-info-section {

@@ -25,7 +25,7 @@ const SingleRecipeDetails = ({ recipe, determineFavButton }) => {
       <section className="recipe-img-header">
         <img className="image-single-recipe" src={recipe.image} alt={`${recipe.title} cover`}/>
         <section className="recipe-title-cooking-info">
-          <h2>{recipe.recipeTitle}</h2>
+          <h2 className="recipe-header">{recipe.recipeTitle}</h2>
           <section className="cooking-info-section">
             <section className="cooking-info">
               <h3>Cook Time:</h3>

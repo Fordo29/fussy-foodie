@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import '../styling/RecipeCard.scss'
+import PropTypes from 'prop-types';
 
 const RecipeCard = ({ recipeImage, title, id, recipe, favoriteBtn}) => {
   return (
@@ -14,3 +15,11 @@ const RecipeCard = ({ recipeImage, title, id, recipe, favoriteBtn}) => {
 }
 
 export default RecipeCard;
+
+RecipeCard.propTypes = {
+  recipeImage: PropTypes.string,
+  title: PropTypes.string,
+  id: PropTypes.number,
+  favoriteBtn: PropTypes.func,
+  recipe: PropTypes.object
+}

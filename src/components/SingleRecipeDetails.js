@@ -1,5 +1,6 @@
 import React from "react";
 import '../styling/SingleRecipeDetails.scss';
+import PropTypes from 'prop-types';
 
 const SingleRecipeDetails = ({ recipe }) => {
   
@@ -55,3 +56,7 @@ const SingleRecipeDetails = ({ recipe }) => {
 }
 
 export default SingleRecipeDetails;
+
+SingleRecipeDetails.propTypes = {
+  recipe: PropTypes.object
+}

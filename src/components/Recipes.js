@@ -1,6 +1,7 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
 import '../styling/Recipes.scss'
+import PropTypes from 'prop-types';
 
 const Recipes = ({ recipes, addFavorite}) => {
   let recipeCards;
@@ -28,3 +29,14 @@ const Recipes = ({ recipes, addFavorite}) => {
 }
 
 export default Recipes;
+
+Recipes.propTypes = {
+  addFavorite: PropTypes.func,
+  recipes: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    recipeImage: PropTypes.string,
+    recipe: PropTypes.object,
+    favoriteBtn: PropTypes.func
+  }))
+}

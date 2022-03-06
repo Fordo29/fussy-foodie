@@ -3,6 +3,7 @@ import '../styling/SingleRecipe.scss';
 import getData from "../apiCalls";
 import SingleRecipeDetails from "./SingleRecipeDetails";
 import ErrorPage from "./ErrorPage";
+import PropTypes from 'prop-types';
 
 class SingleRecipe extends Component {
   constructor(props) {
@@ -34,3 +35,7 @@ class SingleRecipe extends Component {
   }
 }
 export default SingleRecipe;
+
+SingleRecipe.propTypes = {
+  props: PropTypes.number
+}

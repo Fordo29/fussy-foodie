@@ -1,6 +1,7 @@
 import React from "react";
 import FavoriteCard from "./FavoriteCard";
-import '../styling/FavoritesContainer.scss'
+import '../styling/FavoritesContainer.scss';
+import PropTypes from 'prop-types';
 
 const FavoritesContainer = ({ favorites, removeFavorite}) => {
   let favoriteCards;
@@ -27,3 +28,13 @@ const FavoritesContainer = ({ favorites, removeFavorite}) => {
 }
 
 export default FavoritesContainer;
+
+FavoritesContainer.propTypes = {
+  favorites: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    recipeImage: PropTypes.string,
+    recipe: PropTypes.object,
+    fremoveFavorite: PropTypes.func
+  }))
+}

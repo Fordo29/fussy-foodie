@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import '../styling/FavoriteCard.scss'
+import '../styling/FavoriteCard.scss';
+import PropTypes from 'prop-types';
 
 const FavoriteCard = ({ recipeImage, title, id, removeFavorite}) => {
   return (
@@ -14,3 +15,10 @@ const FavoriteCard = ({ recipeImage, title, id, removeFavorite}) => {
 }
 
 export default FavoriteCard;
+
+FavoriteCard.propTypes = {
+  recipeImage: PropTypes.string,
+  title: PropTypes.string,
+  id: PropTypes.number,
+  removeFavorite: PropTypes.func
+}

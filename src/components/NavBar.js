@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import '../styling/NavBar.scss'
+import '../styling/NavBar.scss';
+import PropTypes from 'prop-types';
 
 const NavBar = ({ location }) => {
   let navLink;
@@ -20,3 +21,7 @@ const NavBar = ({ location }) => {
 }
 
 export default NavBar;
+
+NavBar.propTypes = {
+  location: PropTypes.string
+}

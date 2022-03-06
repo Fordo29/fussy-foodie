@@ -43,7 +43,6 @@ class App extends Component {
 
   removeFavorite = (favId) => {
     const unfav = this.state.recipes.find(recipe => recipe.id === favId)
-    console.log("id1", unfav)
     const filteredFavs = this.state.favorites.filter(fav => fav.id !== unfav.id);
     this.setState({ favorites: filteredFavs });
   }

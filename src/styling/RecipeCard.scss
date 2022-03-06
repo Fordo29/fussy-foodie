@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-sizing: border-box;
+  width: 80%;
   border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   padding: .7em;
@@ -13,18 +13,19 @@
 }
 
 .recipe-cover {
-  height: 100%;
+  width: 100%;
   border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   margin-bottom: 12px;
   transition: all .2s ease-in-out; 
 }
 .recipe-cover:hover  {
-  transform: scale(1.05);
+  // transform: scale(1.05);
+  object-fit: none;
   cursor: pointer;
 }
 
-.book-title {
+.recipe-title {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   color: rgb(27, 27, 27);
@@ -76,12 +77,4 @@
 .recipe-detail-link:hover {
   cursor: pointer;
   background-color: $btnHoverColor;
-}
-
-@media screen and (max-width: 744px) {
-
-  .recipe-card {
-    background-color: pink;
-  }
-
 }

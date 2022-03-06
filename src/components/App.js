@@ -6,6 +6,7 @@ import getData from '../apiCalls';
 import SingleRecipe from './SingleRecipe';
 import Favorites from './Favorites'
 import ErrorPage from './ErrorPage'
+import Footer from './Footer'
 
 import '../styling/App.scss';
 
@@ -63,6 +64,7 @@ class App extends Component {
           <Route render={({match}) => {
             return [<NavBar location="error-page" key={match + 'error-nav'}/>, <ErrorPage />]}}/>
         </Switch>
+        <Footer />
       </main>
     )
   }

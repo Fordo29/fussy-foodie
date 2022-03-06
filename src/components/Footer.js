@@ -1,10 +1,15 @@
 import React from "react";
 import '../styling/Footer.scss'
+import { Link } from 'react-router-dom'
+import FooterDetails from "./FooterDetails";
 
-const Footer = () => (
+const Footer = () => {
+  return (
   <div className="footer">
-    <p>This is some content in sticky footer</p>
+    <Link to='/footerStory'><h1>Click here to learn more about the inspiration for this application</h1></Link>
   </div>
-);
+
+  )
+};
 
 export default Footer;

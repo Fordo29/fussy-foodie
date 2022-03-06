@@ -1,0 +1,30 @@
+@import './variables';
+
+.inspiration-page {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-family: $fontFamily;
+}
+
+.header-tagline {
+  font-weight: 600;
+  text-align: center;
+  padding: 1em;
+}
+
+.text-image {
+  display: flex;
+}
+.image-ethan-ice-cream {
+  width: 18%;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+.image-ethan-hot-dog {
+  width: 40%;
+}

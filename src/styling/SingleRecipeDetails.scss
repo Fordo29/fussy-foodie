@@ -10,6 +10,12 @@
   padding: 1em;
   background-color: $cardBackgroundColor;
 }
+.recipe-header {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
 
 .recipe-img-header {
   display: flex;
@@ -26,15 +32,8 @@
   flex: 3;
   display: flex;
   flex-direction: column;
-  margin-left: 1.5em;
+  padding: 1em;
   line-height: 130%;
-}
-
-.recipe-header {
-  text-align: center;
-  font-size: x-large;
-  font-weight: 600;
-  margin-bottom: 1em;
 }
 
 .bold {
@@ -73,24 +72,169 @@
   line-height: 1.2em;  
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+@media screen and (max-width: 800px) {
   
   .single-recipe-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 1%;
-  font-family: $fontFamily;
-  border: 2px solid rgb(27, 27, 27);
-  border-radius: 10px;
-  padding: 1em;
-  background-color: $cardBackgroundColor;
-}
-.image-single-recipe {
-  flex: 1;
-  width: 80%;
-  border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1%;
+    font-family: $fontFamily;
+    border: 2px solid rgb(27, 27, 27);
+    border-radius: 10px;
+    padding: 1em;
+    justify-content: center;
+    background-color: $cardBackgroundColor;
+  }
+
+  .recipe-header {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .recipe-img-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .image-single-recipe {
+    flex: 1;
+    width: 250px;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 1em;
+  }
+
+  .recipe-title-cooking-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 130%;
+  }
+  .bold {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: .2em;
+  }
+  .cooking-info-section {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+
+  .cooking-info {
+    flex: 2;
+  }
+
+  .servings-section {
+    flex: 1;
+  }
+
+  .lower-page-section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .direction-list {
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+  }
+  .nutrition-section {
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.2em;  
+  }
+
+
 }
 
+@media screen and (max-width: 375px) {
+.single-recipe-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1%;
+    font-family: $fontFamily;
+    border: 2px solid rgb(27, 27, 27);
+    border-radius: 10px;
+    padding: 1em;
+    justify-content: center;
+    background-color: $cardBackgroundColor;
+  }
+
+  .recipe-header {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .recipe-img-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .image-single-recipe {
+    flex: 1;
+    width: 250px;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 1em;
+  }
+
+  .recipe-title-cooking-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 130%;
+    font-size: small;
+  }
+
+  .bold {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: .2em;
+  }
+  .cooking-info-section {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+    font-size: small;
+  }
+
+  .cooking-info {
+    flex: 2;
+  }
+
+  .servings-section {
+    flex: 1;
+  }
+
+  .lower-page-section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .direction-list {
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+    font-size: small;
+  }
+  .nutrition-section {
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.2em;
+    font-size: small;  
+  }
 
 }

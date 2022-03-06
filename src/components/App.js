@@ -6,8 +6,10 @@ import getData from '../apiCalls';
 import SingleRecipe from './SingleRecipe';
 import Favorites from './Favorites'
 import ErrorPage from './ErrorPage'
-
+import Footer from './Footer'
+import FooterDetails from './FooterDetails';
 import '../styling/App.scss';
+
 
 class App extends Component {
   constructor() {
@@ -60,9 +62,12 @@ class App extends Component {
           <Route exact path='/favorites' render={({ match }) => {
             return [<NavBar location="favorites" key={match + '-nav'}/>, <Favorites key={match + '-favorites'} favorites={this.state.favorites} removeFavorite={this.removeFavorite}/>]
         }}/>
+          <Route exact path='/footerStory' render={({match}) => {
+            return [<NavBar location="footer-page" key={match + '-nav'}/>, <FooterDetails/>]}}/>
           <Route render={({match}) => {
-            return [<NavBar location="error-page" key={match + 'error-nav'}/>, <ErrorPage />]}}/>
+            return [<NavBar location="error-page" key={match + '-nav'}/>, <ErrorPage />]}}/>
         </Switch>
+        <Footer />
       </main>
     )
   }

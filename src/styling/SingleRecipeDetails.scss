@@ -72,3 +72,25 @@
   list-style-position: inside;
   line-height: 1.2em;  
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  
+  .single-recipe-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1%;
+  font-family: $fontFamily;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 1em;
+  background-color: $cardBackgroundColor;
+}
+.image-single-recipe {
+  flex: 1;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+}

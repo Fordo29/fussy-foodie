@@ -1,31 +1,32 @@
 @import './variables';
 
-.recipe-card {
+.favorite-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-sizing: border-box;
+  width: 80%;
   border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   padding: .7em;
   background-color: $cardBackgroundColor;
+
 }
   
-.recipe-cover {
+.favorite-recipe-cover {
   width: 100%;
   border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   margin-bottom: 12px;
   transition: all .2s ease-in-out; 
 }
-.recipe-cover:hover  {
+.favorite-recipe-cover:hover  {
   transform: scale(1.05);
   // object-fit: none;
   cursor: pointer;
 }
 
-.recipe-title {
+.favorite-recipe-title {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   color: rgb(27, 27, 27);
@@ -33,7 +34,7 @@
   margin-bottom: .5em;
   font-size: 1em;
 }
-.recipe-detail-link {
+.favorite-recipe-detail-link {
   font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
   color: rgb(27, 27, 27);
@@ -73,7 +74,7 @@
 }
 
 .unfavorite-button:hover,
-.recipe-detail-link:hover {
+.favorite-recipe-detail-link:hover {
   cursor: pointer;
   background-color: $btnHoverColor;
 }

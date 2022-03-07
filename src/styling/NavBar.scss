@@ -1,8 +1,10 @@
+@import './_variables.scss';
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30%;
+  height: 40%;
   width: 100%;
 }
 

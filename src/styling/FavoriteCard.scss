@@ -7,6 +7,7 @@
   align-items: center;
   width: 80%;
   border: 2px solid rgb(27, 27, 27);
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
   border-radius: 10px;
   padding: .7em;
   background-color: $cardBackgroundColor;
@@ -21,7 +22,7 @@
   transition: all .2s ease-in-out; 
 }
 .favorite-recipe-cover:hover  {
-  transform: scale(1.05);
+  object-fit: none;
   cursor: pointer;
 }
 

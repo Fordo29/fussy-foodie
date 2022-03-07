@@ -1,7 +1,34 @@
+@import './_variables.scss';
 .recipes-container {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-column-gap: 6px;
   grid-row-gap: 6px;
+}
+
+.fun-random-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline-random-recipe {
+  font-family: $fontFamily;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.randomizer-btn {
+  font-family: $fontFamily;
+  background-color: $cardBackgroundColor;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: .5em;
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+
+.randomizer-btn:hover {
+  cursor: pointer;
+  background-color: $btnHoverColor;
 }

@@ -5,7 +5,6 @@ import EthanHotDog from '../assets/Ethan-hotdog.jpeg'
 
 
 const FooterDetails = () => {
-
   return (
     <section className="inspiration-page">
       <h3 className="header-tagline">Meet the man with very distinguishing tastes</h3>

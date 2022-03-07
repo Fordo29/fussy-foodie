@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import NavBar from './NavBar';
 import Recipes from './Recipes';
 import getData from '../apiCalls';
@@ -49,23 +49,26 @@ class App extends Component {
     this.setState({ favorites: filteredFavs });
   }
 
+ 
+    
+
   render() {
     return (
       <main className="main-container">
         <Switch>
           <Route exact path='/' render={({ match }) => { 
-            return [<NavBar location="landingPage" key={match + '-nav'}/>, <Recipes key={match + '-recipes'} recipes={this.state.recipes} addFavorite={this.addFavorite}  />]
+            return [<NavBar location="landingPage" key={match + '-nav'}/>, <Recipes key={match + '-recipes'} recipes={this.state.recipes} addFavorite={this.addFavorite} />]
           }}/>
           <Route exact path='/:id/selectedRecipe' render={({ match }) => {
             return [<NavBar location="landingPage" key={match + '-nav'}/>, <SingleRecipe key={match.params.id} id={match.params.id}  />]
         }}/>
           <Route exact path='/favorites' render={({ match }) => {
-            return [<NavBar location="favorites" key={match + '-nav'}/>, <Favorites key={match + '-favorites'} favorites={this.state.favorites} removeFavorite={this.removeFavorite}/>]
+            return [<NavBar location="favorites" key={match + '-nav'}/>, <Favorites key={match + '-favorites'} favorites={this.state.favorites} removeFavorite={this.removeFavorite} />]
         }}/>
           <Route exact path='/footerStory' render={({match}) => {
-            return [<NavBar location="footer-page" key={match + '-nav'}/>, <FooterDetails/>]}}/>
-          <Route render={({match}) => {
-            return [<NavBar location="error-page" key={match + '-nav'}/>, <ErrorPage />]}}/>
+            return [<NavBar location="footer-page" key={match + '-nav'}/>, <FooterDetails key={match + '-footer'}/>]}}/>
+          <Route render={() => {
+            return [<NavBar location="error-page" key={Date.now() + '-nav'}/>, <ErrorPage />]}}/>
         </Switch>
         <Footer />
       </main>

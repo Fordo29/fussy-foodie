@@ -15,10 +15,10 @@ Welcome to Rebellious Recipe! This is an application that lets users view a list
 
 ## Screenshots  
 
-When a user first logs on you can see all 50 recipes available and you can click on the randomize dinner button for a quick decision when you do not have any clue what to try. 
+When a user first logs on you can see all 50 recipes available and you can click on the randomize dinner button for a quick decision when you do not have any clue what to try.   
 ![landing-page](https://media.giphy.com/media/YWk9rRgZbS0UB4Ltfm/giphy.gif)
 
-As a user, you can click into a recipe and see all the details to plan and cook your meal.
+As a user, you can click into a recipe and see all the details to plan and cook your meal.  
 ![single-recipe-view](https://media.giphy.com/media/gbHTKT5hcr0auvLvGy/giphy.gif)
 
    

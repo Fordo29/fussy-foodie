@@ -2,9 +2,12 @@ import React from "react";
 import RecipeCard from "./RecipeCard";
 import '../styling/Recipes.scss'
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
+ let ranId = 29;
 
-const Recipes = ({ recipes, addFavorite}) => {
+const Recipes = ({ recipes, addFavorite }) => {
   let recipeCards;
+ 
   if(recipes) {
   recipeCards = recipes.map(recipe => {
     return (
@@ -21,9 +24,22 @@ const Recipes = ({ recipes, addFavorite}) => {
   } else {
     return null
   }
+
+  const randomizeRecipe = (recipes) => {
+    const randomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+    ranId = randomRecipe.id
+    return ranId
+  }
+
   return (
+    <section>
+      <section className="fun-random-section">
+        <h3 className="tagline-random-recipe">Up for a food adventure?</h3>
+        <Link to={`/${ranId}/selectedRecipe`}><button className="randomizer-btn" onClick={() => randomizeRecipe(recipes)}>Randomize your dinner!</button></Link>
+      </section>
     <section className="recipes-container">
       {recipeCards}
+    </section>
     </section>
   )
 }

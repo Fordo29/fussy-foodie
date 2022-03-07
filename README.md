@@ -18,8 +18,13 @@ Welcome to Rebellious Recipe! This is an application that lets users view a list
 When a user first logs on you can see all 50 recipes available and you can click on the randomize dinner button for a quick decision when you do not have any clue what to try.   
 ![landing-page](https://media.giphy.com/media/YWk9rRgZbS0UB4Ltfm/giphy.gif)
 
-As a user, you can click into a recipe and see all the details to plan and cook your meal.  
+As a user, you can click into a recipe and see all the details to plan and cook your meal.  And you can save your favorites and see those on your favorites page. You can also remove them from your favorites page when you no longer want to cook that meal.  
 ![single-recipe-view](https://media.giphy.com/media/gbHTKT5hcr0auvLvGy/giphy.gif)
+
+This application is mobile responsive!  
+![mobile-responsive](https://media.giphy.com/media/Mq9uqftAyfPVXCsbtB/giphy.gif)
+
+This is a fun footer at the bottom that shares the inspiration for this Application.
 
    
 ## Technologies 
@@ -42,9 +47,11 @@ SCSS
    
 ## Links  
 Checkout the Turing spec sheet [here](https://frontend.turing.edu/projects/module-3/showcase.html)
+Check out the deployed link [here](https://fussy-foodie.herokuapp.com/)
 
 ## Challenges and Wins  
-(Coming soon)
+This was a growth project for solidifying my understanding of the react framework.  I did struggle with where the state was storing data and accessing it when I needed it - there was a lot of shifting of the application until I grasped that.  Using hooks would have made this easier.
 
 ## Contributors    
-[Christine Rowland](https://github.com/Fordo29)  
+[Christine Rowland](https://github.com/Fordo29)
+

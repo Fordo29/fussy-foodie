@@ -47,7 +47,7 @@ const Recipes = ({ recipes, addFavorite }) => {
 export default Recipes;
 
 Recipes.propTypes = {
-  addFavorite: PropTypes.func,
+  addFavorite: PropTypes.func.isRequired,
   recipes: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,
     title: PropTypes.string,

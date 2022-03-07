@@ -9,7 +9,14 @@ describe('Landing Page user flow', () => {
       .get('.favorites-link')
       .contains('Your Favorites »')
   });
-  
+
+   it('Should be able to see a teaser tag and a button to click to get a randomized recipe', () => {
+    cy.get('.tagline-random-recipe')
+      .contains('Up for a food adventure?')
+      .get('.randomizer-btn')
+      .contains('Randomize your dinner!')
+  });
+
   it('Should display the recipe image, recipe name, try it link, and button to add to favorites', () => {
     cy.get('img')
       .should('have.attr', 'src', "https://www.tasteofhome.com/wp-content/uploads/2018/01/Pizza-Noodle-Bake_EXPS_GHBZ18_40275_C08_30_3b-8.jpg?fit=696,696")
@@ -32,7 +39,7 @@ describe('Landing Page user flow', () => {
     cy.get('.favorite-button').contains('Add to Favorites').click()
     cy.get('.nav-bar').find('.favorites-link').click()
       .url().should('eq', 'http://localhost:3000/favorites')
-    cy.get('.recipe-card')
+    cy.get('.favorite-card')
       .should('have.length', 1)
   });
 

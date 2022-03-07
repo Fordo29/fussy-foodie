@@ -58,5 +58,5 @@ const SingleRecipeDetails = ({ recipe }) => {
 export default SingleRecipeDetails;
 
 SingleRecipeDetails.propTypes = {
-  recipe: PropTypes.object
+  recipe: PropTypes.object.isRequired
 }

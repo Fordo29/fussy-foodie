@@ -9,15 +9,15 @@ describe('Landing Page user flow', () => {
   });
 
   it('Should display 3 favorited recipe cards', () => {
-    cy.get('.recipe-card')
+    cy.get('.favorite-card')
       .should('have.length', 3)
   });
 
   it('Should remove a recipe card and have 2 favorited recipe cards', () => {
-    cy.get('.recipe-card')
+    cy.get('.favorite-card')
       .should('have.length', 3)
     cy.get('.unfavorite-button').contains('Remove from Favorites').click()
-    cy.get('.recipe-card')
+    cy.get('.favorite-card')
       .should('have.length', 2)
   });
 

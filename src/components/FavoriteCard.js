@@ -17,8 +17,8 @@ const FavoriteCard = ({ recipeImage, title, id, removeFavorite}) => {
 export default FavoriteCard;
 
 FavoriteCard.propTypes = {
-  recipeImage: PropTypes.string,
-  title: PropTypes.string,
-  id: PropTypes.number,
-  removeFavorite: PropTypes.func
+  recipeImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  removeFavorite: PropTypes.func.isRequired
 }

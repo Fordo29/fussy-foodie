@@ -17,9 +17,9 @@ const RecipeCard = ({ recipeImage, title, id, recipe, favoriteBtn}) => {
 export default RecipeCard;
 
 RecipeCard.propTypes = {
-  recipeImage: PropTypes.string,
-  title: PropTypes.string,
-  id: PropTypes.number,
-  favoriteBtn: PropTypes.func,
-  recipe: PropTypes.object
+  recipeImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  favoriteBtn: PropTypes.func.isRequired,
+  recipe: PropTypes.object.isRequired
 }

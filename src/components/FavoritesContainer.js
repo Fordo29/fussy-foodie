@@ -35,6 +35,6 @@ FavoritesContainer.propTypes = {
     title: PropTypes.string,
     recipeImage: PropTypes.string,
     recipe: PropTypes.object,
-    fremoveFavorite: PropTypes.func
+    removeFavorite: PropTypes.func
   }))
 }

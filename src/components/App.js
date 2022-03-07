@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import NavBar from './NavBar';
 import Recipes from './Recipes';
 import getData from '../apiCalls';

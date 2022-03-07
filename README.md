@@ -53,4 +53,7 @@ Check out the deployed link [here](https://fussy-foodie.herokuapp.com/)
 This was a growth project for solidifying my understanding of the react framework.  I did struggle with where the state was storing data and accessing it when I needed it - there was a lot of shifting of the application until I grasped that.  Using hooks would have made this easier.
 
 ## Contributors    
-[Christine Rowland](https://github.com/Fordo29)
+[Christine Rowland](https://github.com/Fordo29). 
+
+## Reviewers
+[Emma Chory](https://github.com/Echory)

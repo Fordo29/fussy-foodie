@@ -14,7 +14,7 @@
 Welcome to Rebellious Recipe! This is an application that lets users view a list of 50 recipes, learn more about them in further detail and add or remove them from their favorite lists.
 
 ## Screenshots  
-(Coming soon)
+![landing-page](https://media.giphy.com/media/YWk9rRgZbS0UB4Ltfm/giphy.gif)
 
    
 ## Technologies 

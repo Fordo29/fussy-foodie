@@ -24,8 +24,8 @@ As a user, you can click into a recipe and see all the details to plan and cook 
 This application is mobile responsive!  
 ![mobile-responsive](https://media.giphy.com/media/Mq9uqftAyfPVXCsbtB/giphy.gif)
 
-This is a fun footer at the bottom that shares the inspiration for this Application.
-
+This is a fun footer at the bottom that shares the inspiration for this Application.  
+![fun-footer](https://user-images.githubusercontent.com/90149529/156964918-423b98f4-5479-46c1-b2f4-d91448959f5f.png)
    
 ## Technologies 
 React  
@@ -46,7 +46,7 @@ SCSS
 - You can close your local server at any time by pressing `CTRL + c` in the terminal window running your server
    
 ## Links  
-Checkout the Turing spec sheet [here](https://frontend.turing.edu/projects/module-3/showcase.html)
+Checkout the Turing spec sheet [here](https://frontend.turing.edu/projects/module-3/showcase.html)  
 Check out the deployed link [here](https://fussy-foodie.herokuapp.com/)
 
 ## Challenges and Wins  
@@ -54,4 +54,3 @@ This was a growth project for solidifying my understanding of the react framewor
 
 ## Contributors    
 [Christine Rowland](https://github.com/Fordo29)
-

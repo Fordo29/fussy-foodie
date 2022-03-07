@@ -15,5 +15,4 @@ describe('Landing Page user flow', () => {
     .get('.description').contains('His name is Ethan. He is a very intelligent 8 year old with a curious mind but not a curious palate. The way to get this little guy to eat is to challenge him to a take an adventure with food and find new recipes to cook and try on his own.')
     .get('.plead-from-mom').contains('Note from his mom: PLEASE FOR THE LOVE OF ALL THINGS HOLY!!! EAT SOMETHING MAN!')
   });
-
 });

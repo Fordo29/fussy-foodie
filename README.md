@@ -1,4 +1,4 @@
-# Rebellious Recipe
+# Fussy Foodie
   
 ## Table of Contents
 - [Abstract](#abstract)
@@ -11,7 +11,7 @@
 
 ## Abstract
 
-Welcome to Rebellious Recipe! This is an application that lets users view a list of 50 recipes, learn more about them in further detail and add or remove them from their favorite lists.
+Welcome to Fussy Foodie! This is an application that lets users view a list of 50 recipes, learn more about them in further detail and add or remove them from their favorite lists.
 
 ## Screenshots  
 

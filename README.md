@@ -38,8 +38,8 @@ SCSS
 ## Setup 
   
 - In your terminal, clone this repository down to your local machine by running:  
-  `git clone git@github.com:Fordo29/rebellious-recipe.git`  
-- `cd` into the `rancid-tomatillos` directory
+  `git clone git@github.com:Fordo29/fussy-foodie.git`  
+- `cd` into the `fussy-foodie` directory
 - Run `npm install` to install the dependencies
 - Run `npm start` to start your local server  
 - Visit `http://localhost:3000/` in your web browser
